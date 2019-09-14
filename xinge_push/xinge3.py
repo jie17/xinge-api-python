@@ -34,7 +34,8 @@ class Xinge(object):
                         "title": message.title,
                         "subtitle": message.subtitle,
                         "body": message.content,
-                    }
+                    },
+                    "sound": "default"
                 }
             }
         return Xinge3Helper.push(self.appId, self.secretKey, body)
